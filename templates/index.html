@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='materialize.min.css')}}"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<script type="text/javascript" src="{{ url_for('static', filename='jquery-3.3.1.js')}}"></script>
+	<script>
+		$("#dropdown-trigger").ready(function(){
+			$("#dropdown-trigger").dropdown();
+		});
+	</script>
+    </head>
+
+    <body>
+
+	<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red" href="index2.html">
+    <i class="large material-icons">add</i>
+  </a>
+  
+       </div>
+	<ul class="collection">
+	<li class="collection-item avater">
+
+	 <nav>
+   <div class="nav-wrapper">
+    <ul class="left hide-on-med-and-down">
+	    <li><a href="#!" data-target="dropdown2" id="dropdown-trigger"><i class="material-icons">dehaze</i></a></li>
+	    <li><a href="#!" class="brand-logo" id="dropdown-trigger">&emsp;INBOX</a></li>
+    </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+      </ul>
+    </div>
+  </nav><br>
+  <ul id="dropdown2" class="dropdown-content">
+	  <li><a href="#!" class="brand-logo"><i class="material-icons">today</i>Today</a></li><br>
+	  <li><a href="#!" class="brand-logo"><i class="material-icons">email</i>Inbox</a></li><br>
+	  <li><a href="#!" class="brand-logo"><i class="material-icons">grade</i>Starred</a></li><br>
+	  <li><a href="#!" class="brand-logo"><i class="material-icons">bookmark</i>Important</a></li><br>
+	  <li><a href="#!" class="brand-logo"><i class="material-icons">drafts</i>Drafts</a></li><br>
+	  <li><a href="#!" class="brand-logo"><i class="material-icons">send</i>Sent</a></li><br>
+  </ul>
+     </li>
+
+	<li class="collection-item avater">
+
+	<ul class="collection">
+	  <li class="collection-item avatar">
+	    <i class="material-icons circle yellow">G</i>
+	   <span class="title">Glassdoor<p align="right">1 Apr</p></span>
+	   <p><strong>New Reviews:Linkedln</strong><br>
+	      GlassDoor Jobs | Reviews | Sign in Get free mobile app 15 updates from companies you are <br>
+	      following
+ 	   </p>
+	</li>
+
+         <li class="collection-item avatar">
+	   <i class="material-icons circle blue">T</i>
+          <span class="title">Twitch<p align="right">28 Jul</p></span>
+	  <p><strong>forgg just went live on Twitch</strong><br>
+	     Twitch forGG streaming<br>
+	     LIVE - donating help
+	  </p>
+	</li>
+
+	<li class="collection-item avatar">
+	  <i class="material-icons circle yellow">G</i>
+	    <span class="title">Glass Door<p align="right">27 Jul</p></span>
+	    <p><strong>Now Hiring : Ancestry.com, Square and Adobe</strong><br>
+	       GlassDoor New weekly jobs Get free mobile app 10 new jobs found for you this week senior<br>
+	       Software
+	   </p>
+	</li>
+
+	<li class="collection-item avatar">
+	  <i class="material-icons circle green">L</i>
+	   <span class="title">LinkedIn Invitations<p align="right">25 Jul</p></span>
+	   <p><strong>See Shiyi's connections, experience, and more</strong><br>
+	      See shiyi&#39;s connections, experience and more Linkedin Shiyi has accepted your invitation<br>
+	      Shiyi
+           </p>
+	</li>
+
+	<li class="collection-item avatar">
+	  <i class="material-icons circle yellow">G</i>
+	   <span class="title">Google Wallet<p align="right">23 Jul</p></span>
+	   <p><strong>You sent $9.00 to pchen31@hawk.iit.edu</strong><br>
+              You sent pchen31@hawk.iit.edu $9.00 on June 23<br>
+	      be deposited
+	   </p>
+	</li>
+    </ul>
+	</li>
+   </ul>
+
+      <!--JavaScript at end of body for optimized loading-->
+	<script type="text/javascript" src="{{ url-for('static', filename='materialize.min.js')}}"></script>
+    </body>
+</html>
